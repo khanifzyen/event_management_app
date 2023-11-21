@@ -1,5 +1,6 @@
 import 'package:event_management_app/views/homepage.dart';
 import 'package:event_management_app/views/login.dart';
+import 'package:event_management_app/views/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(
         useMaterial3: true,
       ).copyWith(textTheme: GoogleFonts.interTextTheme()),
-      home: const HomePage(),
+      home: const SignupPage(),
     );
   }
 }

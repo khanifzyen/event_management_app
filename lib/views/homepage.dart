@@ -25,10 +25,13 @@ class _HomePageState extends State<HomePage> {
         ],
         title: Text("Homepage"),
       ),
-      body: Text(
+      body: const Text(
         "Hi, user 👋",
         style: TextStyle(
-            color: kLightGreen, fontSize: 32, fontWeight: FontWeight.w600),
+          color: kLightGreen,
+          fontSize: 32,
+          fontWeight: FontWeight.w600,
+        ),
       ),
     );
   }
