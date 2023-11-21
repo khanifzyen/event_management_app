@@ -28,5 +28,23 @@ Future loginUser(String email, String password) async {
       email: email,
       password: password,
     );
-  } catch (e) {}
+    return true;
+  } on AppwriteException catch (e) {
+    return false;
+  }
+}
+
+//Logout user
+Future logoutUser() async {
+  await account.deleteSession(sessionId: 'current');
+}
+
+//Check if user have active session or not
+Future checkSessions() async {
+  try {
+    await account.getSession(sessionId: "current");
+    return true;
+  } catch (e) {
+    return false;
+  }
 }
