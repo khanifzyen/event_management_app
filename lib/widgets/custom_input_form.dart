@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../constants/colors.dart';
 
 class CustomInputForm extends StatelessWidget {
   final TextEditingController? controller;
@@ -35,7 +36,7 @@ class CustomInputForm extends StatelessWidget {
       cursorColor: Colors.black,
       decoration: InputDecoration(
         filled: true,
-        fillColor: const Color.fromARGB(255, 218, 255, 123),
+        fillColor: kLightGreen,
         border: OutlineInputBorder(
           borderSide: BorderSide.none,
           borderRadius: BorderRadius.circular(8),
