@@ -2,4 +2,4 @@
 
 Event management app built with flutter and appwrite
 
-Tess lagi
+Tess lagi lagi
